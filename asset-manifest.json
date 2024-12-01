@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dtejidosetrata/static/css/main.371b6389.css",
-    "main.js": "/dtejidosetrata/static/js/main.387afa39.js",
-    "static/media/fondo.webp": "/dtejidosetrata/static/media/fondo.e0031d94be8d01b614f0.webp",
-    "static/media/FondoProductoPagina.webp": "/dtejidosetrata/static/media/FondoProductoPagina.9de656d5bbb335b055fe.webp",
-    "static/media/FondoSeleccion.webp": "/dtejidosetrata/static/media/FondoSeleccion.f3bfc9f1672ccff3e9e3.webp",
-    "index.html": "/dtejidosetrata/index.html",
-    "main.371b6389.css.map": "/dtejidosetrata/static/css/main.371b6389.css.map",
-    "main.387afa39.js.map": "/dtejidosetrata/static/js/main.387afa39.js.map"
+    "main.css": "/DtejidosPage/static/css/main.7d815134.css",
+    "main.js": "/DtejidosPage/static/js/main.387afa39.js",
+    "static/media/fondo.webp": "/DtejidosPage/static/media/fondo.e0031d94be8d01b614f0.webp",
+    "static/media/FondoProductoPagina.webp": "/DtejidosPage/static/media/FondoProductoPagina.9de656d5bbb335b055fe.webp",
+    "static/media/FondoSeleccion.webp": "/DtejidosPage/static/media/FondoSeleccion.f3bfc9f1672ccff3e9e3.webp",
+    "index.html": "/DtejidosPage/index.html",
+    "main.7d815134.css.map": "/DtejidosPage/static/css/main.7d815134.css.map",
+    "main.387afa39.js.map": "/DtejidosPage/static/js/main.387afa39.js.map"
   },
   "entrypoints": [
-    "static/css/main.371b6389.css",
+    "static/css/main.7d815134.css",
     "static/js/main.387afa39.js"
   ]
 }
