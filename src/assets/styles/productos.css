@@ -1,0 +1,129 @@
+/* Contenedor de productos */
+.productosContenedorUnico {
+  background: url('../images/FondoSeleccion.webp') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh; /* Asegura que cubra toda la ventana */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Contenedor de las tarjetas de producto */
+.productosPaginacionUnico {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vh 5vw;
+  justify-items: center;
+}
+
+/* Estilo de las tarjetas de presentación */
+.productosPresentacionUnica {
+  background-color: aliceblue;
+  width: fit-content;
+  padding: 15px;
+  position: relative;
+  transform: rotate(-3deg); /* Da un ligero ángulo a las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  border: none; /* Eliminar bordes */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Simulación de "cuerda" */
+.productosPresentacionUnica::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+.productosPresentacionUnica:hover {
+  transform: scale(1.05) rotate(0deg); /* Efecto de agrandado al hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+}
+
+.productosPaginacionUnico a {
+  text-decoration: none;
+}
+
+.tituloUnico {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2vh, 2rem);
+  line-height: 1.4;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.imagenMuestraUnica {
+  width: auto;
+  height: 44vh;
+  border-radius: 10px; /* Bordes redondeados en imágenes */
+}
+
+/* Botones de paginación */
+.contBotonesUnicos {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.botonUnico {
+  background-color: rgba(0, 0, 255, 0.329);
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 1000;
+  border-radius: 50%;
+  color: black;
+  border: none; /* Eliminar el borde */
+}
+
+.botonUnico:disabled {
+  opacity: 0.5;
+}
+
+@keyframes caida {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(50vh) rotate(15deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.productoCaida {
+  animation: caida 0.8s forwards ease-in-out;
+  pointer-events: none; /* Para que no se pueda hacer clic mientras cae */
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 800px) {
+  .productosPaginacionUnico {
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+
+  .productosPresentacionUnica {
+    width: 80vw;
+  }
+
+  .imagenMuestraUnica {
+    width: 70vw;
+    height: auto;
+  }
+}
+
+

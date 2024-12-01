@@ -1,0 +1,74 @@
+body {
+  background-image: url("/public/images/fondo.webp");
+  background-size: cover;
+  }
+
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #0f0636;
+    padding: 1vh;
+  }
+
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2vw;
+  }
+
+  .nav-links a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo suave al pasar el ratón */
+  }
+
+  .nav-links a:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más oscuro al hacer clic */
+  }
+
+  .logo{
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .logo-img {
+    width: auto;
+    height: 10vh;
+  }
+  @media (max-width: 800px) {
+  
+    .navbar {
+      display: flex;
+      width: 100vw;
+      align-items: center;
+      padding: 5px;
+      background-color: #0f0636;
+
+    }
+  
+    .nav-links li a {
+      font-size: 3vw;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;     
+        margin-right: 10px; 
+    }
+  
+    .logo-img {
+      width: auto;
+      height: 5vh;
+    }
+  
+    
+  }
+  
