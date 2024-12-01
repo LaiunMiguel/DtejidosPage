@@ -11,7 +11,7 @@ const ProductoPage = () => {
   useEffect(() => {
     const producto = productosData.find((p) => p.id === Number(id));
     setProducto(producto);
-    setImagenPrincipal(producto.imagen);
+    setImagenPrincipal(`${process.env.PUBLIC_URL}${producto.imagen}`);
   }, [id]);
 
   if (!producto) {
@@ -19,9 +19,13 @@ const ProductoPage = () => {
   }
 
   const actualizarImagen = (num) => {
-    setImagenPrincipal(`/images/prod${id}/${num}.jpg`);
+    if (producto.id > 3) {
+      setImagenPrincipal(`${process.env.PUBLIC_URL}/images/prod${3}/${num}.jpg`);
+    }
+    else {
+      setImagenPrincipal(`${process.env.PUBLIC_URL}/images/prod${id}/${num}.jpg`);
+    }
   };
-
 
   const scrollGallery = (direction) => {
     const gallery = document.querySelector('.imagenesCont');
@@ -69,7 +73,7 @@ const ProductoPage = () => {
               {producto.galeria.map((imagen, index) => (
                 <img
                   key={index}
-                  src={imagen}
+                  src={`${process.env.PUBLIC_URL}${imagen}`}  // Aquí cambiamos la ruta de la imagen
                   className="miniImagen"
                   alt={`Miniatura ${index + 1}`}
                   onClick={() => actualizarImagen(index + 1)}

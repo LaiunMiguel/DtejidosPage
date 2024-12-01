@@ -5,7 +5,9 @@ const ProductoPresentacion = ({ producto }) => {
     <div className="productosPresentacionUnica">
         <div className="cartaPresentacionUnica">
           <div>
-            <img src={producto.imagen} alt={producto.nombre} className="imagenMuestraUnica" />
+            <img src={`${process.env.PUBLIC_URL}${producto.imagen}`}  
+            alt={producto.nombre} 
+            className="imagenMuestraUnica" />
           </div>
           
               <div className="tituloUnico">

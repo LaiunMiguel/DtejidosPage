@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/styles/sobreMi.css'; // Asegúrate de que el CSS esté en la carpeta correcta
+import SobreMiImage from '../assets/images/SobreMi.jpg';
+
 
 const SobreMi = () => {
   return (
@@ -14,7 +16,7 @@ const SobreMi = () => {
 
         <div className="sobreMi-divConImagenYTexto">
           <div className="sobreMi-imagenDiv">
-            <img className="sobreMi-imagen" src="/images/SobreMi.jpg" alt="Sobre Mi" />
+            <img className="sobreMi-imagen" src={SobreMiImage} alt="Sobre Mi" />
           </div>
           <div className="sobreMi-texto">
             <p>Estoy muy orgullosa de mí, de cómo y dónde empecé y cómo y dónde estoy parada ahora.</p>

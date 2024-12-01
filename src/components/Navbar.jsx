@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <Link to="/">
-            <img src="/logo.jpg" alt="Logo" className="logo-img" />
+            <img src={`${process.env.PUBLIC_URL}/logo.jpg`} alt="Logo" className="logo-img" />
           </Link>
         </div>
         <ul className="nav-links">
